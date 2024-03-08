@@ -7,6 +7,7 @@ public class BookMain {
         Book book1 = new Book();
         book1.displayInfo();
 
+
         // title과 author만을 매개변수로 받는 생성자
         Book book2 = new Book("Hello Java", "lee");
         book2.displayInfo();
