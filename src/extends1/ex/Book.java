@@ -10,24 +10,18 @@ public class Book extends Item{
      *   Book: 저자 author, isbn isbn
      */
 
-    public String author;
-    String isbn;
+    private String author;
+    private String isbn;
 
     public Book(String name, int price, String author, String isbn) {
-        super.name = name;
-        super.price = price;
+        super(name,price);
         this.author = author;
         this.isbn = isbn;
     }
 
     @Override
-    public int getPrice() {
-        return super.price;
-    }
-
-    @Override
     public void print() {
-        System.out.println("이름: " + name + ", 가격: " + price);
+        super.print();
         System.out.println("- 저자: " + author + ", isbn: " + isbn );
     }
 

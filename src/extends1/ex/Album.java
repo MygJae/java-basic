@@ -9,22 +9,16 @@ public class Album extends Item{
      *   Album: 아티스트 artist
      */
 
-    public String artist;
+    private String artist;
 
     public Album(String name, int price, String artist) {
-        super.name = name;
-        super.price = price;
+        super(name, price);
         this.artist = artist;
     }
 
     @Override
-    public int getPrice() {
-        return super.price;
-    }
-
-    @Override
     public void print() {
-        System.out.println("이름: " + name + ", 가격: " + price);
+        super.print();
         System.out.println("- 아티스트: " + artist);
     }
 

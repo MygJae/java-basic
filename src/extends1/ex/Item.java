@@ -9,16 +9,20 @@ public class Item{
      *   Book: 저자 author, isbn isbn
      */
 
-    public String name;
-    public int price;
-    private int sum;
+    private String name;
+    private int price;
+
+    public Item(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public void print() {
-
+        System.out.println("이름: " + name + ", 가격: " + price);
     }
 
     public int getPrice() {
-        return sum += price;
+        return price;
     }
 
 
